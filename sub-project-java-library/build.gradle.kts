@@ -3,8 +3,9 @@ plugins {
 }
 
 dependencies {
-    api("commons-httpclient:commons-httpclient:3.1")
-    implementation("org.apache.commons:commons-lang3:3.5")
+    api(platform(project(":sub-project-java-platform")))
+    api("commons-httpclient:commons-httpclient")
+    implementation("org.apache.commons:commons-lang3")
 }
 
 repositories {
